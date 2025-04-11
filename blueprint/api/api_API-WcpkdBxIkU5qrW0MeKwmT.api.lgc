@@ -1,0 +1,8 @@
+id: API-WcpkdBxIkU5qrW0MeKwmT
+method: GET
+path: /recipes
+description: Retrieves all recipes for the authenticated user.
+requestData: null
+responseSchema: null
+createdAt: '2025-04-11T21:23:54.009Z'
+updatedAt: '2025-04-11T21:23:54.009Z'

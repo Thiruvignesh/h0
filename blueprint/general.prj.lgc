@@ -1,0 +1,14 @@
+id: xB9AWdRWnWyG4XT4ejtyE
+name: h0 - Health Zero - Healthy & Fitness lifestyle redefined
+description: >-
+  h0 is a revolutionary webapp that helps users track the daily nutrition intake
+  of the users, help them plan their meals and manage recepies to have a
+  balanced and proper diet.
+type: project
+details:
+  frontend: nextjs
+  backend: nodejs express
+  orm: drizzle
+  storeProvider: zustand
+  language: typescript
+  otherLibraries: ''

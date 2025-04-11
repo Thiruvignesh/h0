@@ -1,0 +1,82 @@
+id: model-recipe
+name: Recipe
+description: >-
+  User defined recipes composed of a collection of ingredients and preparation
+  steps.
+fields:
+  - id: field-recipe-id
+    name: id
+    type: uuid
+    required: true
+    description: Unique identifier for the recipe
+    defaultValue: null
+    constraints: []
+  - id: field-recipe-userId
+    name: userId
+    type: uuid
+    required: true
+    description: Reference to the user who created the recipe
+    defaultValue: null
+    constraints: []
+  - id: field-recipe-title
+    name: title
+    type: string
+    required: true
+    description: Title of the recipe
+    defaultValue: null
+    constraints: []
+  - id: field-recipe-description
+    name: description
+    type: string
+    required: true
+    description: Description and instructions for the recipe
+    defaultValue: null
+    constraints: []
+  - id: field-recipe-totalCalories
+    name: totalCalories
+    type: number
+    required: false
+    description: Total calculated calories for the recipe
+    defaultValue: null
+    constraints: []
+  - id: field-recipe-prepTime
+    name: prepTime
+    type: number
+    required: false
+    description: Preparation time in minutes
+    defaultValue: null
+    constraints: []
+  - id: field-recipe-cookTime
+    name: cookTime
+    type: number
+    required: false
+    description: Cooking time in minutes
+    defaultValue: null
+    constraints: []
+relations:
+  - id: rel-recipe-user
+    name: user
+    type: many-to-one
+    targetModel: User
+    description: Creator of the recipe
+    foreignKey: userId
+  - id: rel-recipe-mealPlans
+    name: mealPlans
+    type: many-to-many
+    targetModel: MealPlan
+    description: Meal plans that include this recipe
+    foreignKey: recipeId
+  - id: rel-recipe-ingredients
+    name: ingredients
+    type: many-to-many
+    targetModel: Ingredient
+    description: Ingredients included in the recipe
+    foreignKey: recipeId
+  - id: rel-recipe-meals
+    name: meals
+    type: many-to-many
+    targetModel: Meal
+    description: Meals that include this recipe
+    foreignKey: recipeId
+createdAt: '2025-04-11T21:49:50.729Z'
+updatedAt: '2025-04-11T21:49:50.729Z'

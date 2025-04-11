@@ -1,0 +1,11 @@
+title: Nutritional Analysis
+description: >-
+  Automatically analyze the nutritional content (calories, macros, vitamins,
+  etc.) of logged meals.
+type: functional
+version: '1.0'
+priority: High
+status: planned
+id: REQ-FPEZl2KR9ShOkdcgZEVO6
+createdAt: '2025-04-11T21:03:32.207Z'
+updatedAt: '2025-04-11T21:03:32.207Z'

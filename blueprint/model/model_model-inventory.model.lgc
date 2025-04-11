@@ -1,0 +1,55 @@
+id: model-inventory
+name: Inventory
+description: Tracks ingredient stock levels.
+fields:
+  - id: field-inventory-id
+    name: id
+    type: uuid
+    required: true
+    description: Unique identifier for the inventory record
+    defaultValue: null
+    constraints: []
+  - id: field-inventory-ingredientId
+    name: ingredientId
+    type: uuid
+    required: true
+    description: Reference to the ingredient being tracked
+    defaultValue: null
+    constraints: []
+  - id: field-inventory-quantity
+    name: quantity
+    type: number
+    required: true
+    description: Current stock quantity of the ingredient
+    defaultValue: null
+    constraints: []
+  - id: field-inventory-unit
+    name: unit
+    type: string
+    required: true
+    description: Unit of measurement for the ingredient stock (e.g., kg, lb)
+    defaultValue: null
+    constraints: []
+  - id: field-inventory-createdAt
+    name: createdAt
+    type: date
+    required: true
+    description: Timestamp when the inventory record was created
+    defaultValue: null
+    constraints: []
+  - id: field-inventory-updatedAt
+    name: updatedAt
+    type: date
+    required: true
+    description: Timestamp when the inventory record was last updated
+    defaultValue: null
+    constraints: []
+relations:
+  - id: rel-inventory-ingredient
+    name: ingredient
+    type: one-to-one
+    targetModel: Ingredient
+    description: Ingredient whose stock is tracked
+    foreignKey: ingredientId
+createdAt: '2025-04-11T21:49:50.729Z'
+updatedAt: '2025-04-11T21:49:50.729Z'

@@ -1,0 +1,12 @@
+path: https://gateway.apyflux.com/search
+method: GET
+description: "This endpoint helps you search for a specific food and returns results for that food along with basic nutritional info.\n\nRequest Parameters\nName\tType\tIsRequired\tDefault Value\tDescription\nvalue\tURL Parameter\tYes\tbutter chicken\tThis parameter specifies the food item you want to search for. You can use any food name or term."
+requestData: null
+responseSchema:
+  schema: >-
+    {"results":40,"page":1,"pages":25,"items":[{"food_name":"Veg pizza
+    (Homemade)","common_names":"Veg pizza
+    (homemade)","food_unique_id":"8760b9d1-90e2-4eab-a21e-2b7ddc6469c2","food_id":18875,"serving_type":"slice","calories_calculated_for":97.78750000000001,"basic_unit_measure":97.78750000000001,"nutrients":{"fats":3.77,"carbs":17.81,"protein":4.45,"calories":114.76}}]}
+createdAt: '2025-04-11T21:15:31.211Z'
+updatedAt: '2025-04-11T21:23:49.146Z'
+id: API-fIm2cQDrP9tLYq3YJAEUO

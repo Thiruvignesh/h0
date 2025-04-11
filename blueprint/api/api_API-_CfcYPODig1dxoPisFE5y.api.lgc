@@ -1,0 +1,8 @@
+id: API-_CfcYPODig1dxoPisFE5y
+method: DELETE
+path: /recipes/:id
+description: Deletes a specific recipe.
+requestData: null
+responseSchema: null
+createdAt: '2025-04-11T21:23:54.009Z'
+updatedAt: '2025-04-11T21:23:54.009Z'

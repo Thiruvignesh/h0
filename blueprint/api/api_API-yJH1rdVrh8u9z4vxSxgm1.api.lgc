@@ -1,0 +1,8 @@
+id: API-yJH1rdVrh8u9z4vxSxgm1
+method: POST
+path: /recipes
+description: Adds a new recipe including ingredients and preparation steps.
+requestData: null
+responseSchema: null
+createdAt: '2025-04-11T21:23:54.009Z'
+updatedAt: '2025-04-11T21:23:54.009Z'

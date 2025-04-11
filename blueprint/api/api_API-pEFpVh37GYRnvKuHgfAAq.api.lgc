@@ -1,0 +1,10 @@
+id: API-pEFpVh37GYRnvKuHgfAAq
+method: POST
+path: /meals/analyze
+description: >-
+  Analyzes the nutritional content (calories, macros, vitamins, etc.) of a meal
+  entry.
+requestData: null
+responseSchema: null
+createdAt: '2025-04-11T21:23:54.009Z'
+updatedAt: '2025-04-11T21:23:54.009Z'

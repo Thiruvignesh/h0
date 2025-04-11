@@ -1,0 +1,8 @@
+id: API-wPpwbUACWpBU0tRpDAm2Q
+method: DELETE
+path: /meals/:id
+description: Deletes a specific meal entry.
+requestData: null
+responseSchema: null
+createdAt: '2025-04-11T21:23:54.009Z'
+updatedAt: '2025-04-11T21:23:54.009Z'

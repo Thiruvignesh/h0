@@ -1,0 +1,11 @@
+title: User Dashboard
+description: >-
+  Provide a personalized dashboard displaying daily tracking stats, nutritional
+  summaries, and historical data.
+type: functional
+version: '1.0'
+priority: High
+status: planned
+id: REQ-H1wZ_twHJEYaAqX5hSbt8
+createdAt: '2025-04-11T21:03:32.207Z'
+updatedAt: '2025-04-11T21:03:32.207Z'

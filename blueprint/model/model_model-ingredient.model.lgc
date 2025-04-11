@@ -1,0 +1,43 @@
+id: model-ingredient
+name: Ingredient
+description: >-
+  Represents individual ingredients used in recipes, with nutritional
+  information.
+fields:
+  - id: field-ingredient-id
+    name: id
+    type: uuid
+    required: true
+    description: Unique identifier for the ingredient
+    defaultValue: null
+    constraints: []
+  - id: field-ingredient-name
+    name: name
+    type: string
+    required: true
+    description: Name of the ingredient
+    defaultValue: null
+    constraints: []
+  - id: field-ingredient-description
+    name: description
+    type: string
+    required: false
+    description: Description of the ingredient
+    defaultValue: null
+    constraints: []
+  - id: field-ingredient-nutritionalInfo
+    name: nutritionalInfo
+    type: object
+    required: false
+    description: Nutritional information including calories, macros, and vitamins
+    defaultValue: null
+    constraints: []
+relations:
+  - id: rel-ingredient-recipes
+    name: recipes
+    type: many-to-many
+    targetModel: Recipe
+    description: Recipes that use this ingredient
+    foreignKey: ingredientId
+createdAt: '2025-04-11T21:49:50.729Z'
+updatedAt: '2025-04-11T21:49:50.729Z'

@@ -1,0 +1,8 @@
+id: API-T5WQuNo25jzNZRFbKce_1
+method: GET
+path: /meals
+description: Retrieves the list of daily meal entries for the authenticated user.
+requestData: null
+responseSchema: null
+createdAt: '2025-04-11T21:23:54.009Z'
+updatedAt: '2025-04-11T21:23:54.009Z'

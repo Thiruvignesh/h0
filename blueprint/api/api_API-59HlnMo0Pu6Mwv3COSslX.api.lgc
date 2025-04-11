@@ -1,0 +1,10 @@
+id: API-59HlnMo0Pu6Mwv3COSslX
+method: GET
+path: /meal-planner
+description: >-
+  Fetches meal plan suggestions based on dietary preferences and nutritional
+  goals.
+requestData: null
+responseSchema: null
+createdAt: '2025-04-11T21:23:54.009Z'
+updatedAt: '2025-04-11T21:23:54.009Z'

@@ -1,0 +1,67 @@
+id: model-user
+name: User
+description: Stores user authentication and profile data.
+fields:
+  - id: field-user-id
+    name: id
+    type: uuid
+    required: true
+    description: Unique identifier for the user
+    defaultValue: null
+    constraints: []
+  - id: field-user-name
+    name: name
+    type: string
+    required: true
+    description: User's full name
+    defaultValue: null
+    constraints: []
+  - id: field-user-email
+    name: email
+    type: string
+    required: true
+    description: User's email address
+    defaultValue: null
+    constraints: []
+  - id: field-user-profileImage
+    name: profileImage
+    type: string
+    required: false
+    description: URL to user's profile image
+    defaultValue: null
+    constraints: []
+  - id: field-user-createdAt
+    name: createdAt
+    type: date
+    required: true
+    description: Record creation timestamp
+    defaultValue: null
+    constraints: []
+  - id: field-user-updatedAt
+    name: updatedAt
+    type: date
+    required: true
+    description: Record update timestamp
+    defaultValue: null
+    constraints: []
+relations:
+  - id: rel-user-meals
+    name: meals
+    type: one-to-many
+    targetModel: Meal
+    description: Meals logged by the user
+    foreignKey: userId
+  - id: rel-user-recipes
+    name: recipes
+    type: one-to-many
+    targetModel: Recipe
+    description: Recipes created by the user
+    foreignKey: userId
+  - id: rel-user-mealPlans
+    name: mealPlans
+    type: one-to-many
+    targetModel: MealPlan
+    description: Meal plans created by the user
+    foreignKey: userId
+createdAt: '2025-04-11T21:49:50.729Z'
+updatedAt: '2025-04-11T21:49:50.729Z'

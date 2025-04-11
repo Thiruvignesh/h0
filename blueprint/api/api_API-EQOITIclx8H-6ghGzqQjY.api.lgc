@@ -1,0 +1,8 @@
+id: API-EQOITIclx8H-6ghGzqQjY
+method: PUT
+path: /meals/:id
+description: Updates a specific meal entry for the authenticated user.
+requestData: null
+responseSchema: null
+createdAt: '2025-04-11T21:23:54.009Z'
+updatedAt: '2025-04-11T21:23:54.009Z'

@@ -1,0 +1,8 @@
+id: API-FaKAS4Tf_MykwJjoRLdaM
+method: POST
+path: /meals
+description: Adds a new meal entry with details like food, portion size, and time.
+requestData: null
+responseSchema: null
+createdAt: '2025-04-11T21:23:54.009Z'
+updatedAt: '2025-04-11T21:23:54.009Z'

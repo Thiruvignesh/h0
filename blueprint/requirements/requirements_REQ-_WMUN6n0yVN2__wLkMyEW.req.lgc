@@ -1,0 +1,11 @@
+title: Meal Tracking
+description: >-
+  Allow users to input, edit, and delete daily meals and snack entries along
+  with portion sizes.
+type: functional
+version: '1.0'
+priority: High
+status: planned
+id: REQ-_WMUN6n0yVN2__wLkMyEW
+createdAt: '2025-04-11T21:03:32.207Z'
+updatedAt: '2025-04-11T21:03:32.207Z'

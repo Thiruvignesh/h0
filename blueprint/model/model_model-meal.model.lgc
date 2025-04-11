@@ -1,0 +1,67 @@
+id: model-meal
+name: Meal
+description: >-
+  Represents a logged meal event for a user, consisting of a collection of
+  recipes.
+fields:
+  - id: field-meal-id
+    name: id
+    type: uuid
+    required: true
+    description: Unique identifier for the meal
+    defaultValue: null
+    constraints: []
+  - id: field-meal-userId
+    name: userId
+    type: uuid
+    required: true
+    description: Reference to the user
+    defaultValue: null
+    constraints: []
+  - id: field-meal-mealDate
+    name: mealDate
+    type: date
+    required: true
+    description: Date of the meal
+    defaultValue: null
+    constraints: []
+  - id: field-meal-mealType
+    name: mealType
+    type: enum
+    required: true
+    description: Type of meal (Breakfast, Lunch, Dinner, Snack)
+    defaultValue: null
+    constraints:
+      - Breakfast
+      - Lunch
+      - Dinner
+      - Snack
+  - id: field-meal-totalCalories
+    name: totalCalories
+    type: number
+    required: false
+    description: Total calories for the meal
+    defaultValue: null
+    constraints: []
+  - id: field-meal-notes
+    name: notes
+    type: string
+    required: false
+    description: Additional notes for the meal
+    defaultValue: null
+    constraints: []
+relations:
+  - id: rel-meal-user
+    name: user
+    type: many-to-one
+    targetModel: User
+    description: User who logged the meal
+    foreignKey: userId
+  - id: rel-meal-recipes
+    name: recipes
+    type: many-to-many
+    targetModel: Recipe
+    description: Recipes included in the meal
+    foreignKey: mealId
+createdAt: '2025-04-11T21:49:50.729Z'
+updatedAt: '2025-04-11T21:49:50.729Z'

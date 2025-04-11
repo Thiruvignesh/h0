@@ -1,0 +1,56 @@
+id: model-shoppingList
+name: ShoppingList
+description: >-
+  Represents a shopping list containing a collection of ingredients to be
+  purchased.
+fields:
+  - id: field-shoppingList-id
+    name: id
+    type: uuid
+    required: true
+    description: Unique identifier for the shopping list
+    defaultValue: null
+    constraints: []
+  - id: field-shoppingList-userId
+    name: userId
+    type: uuid
+    required: true
+    description: Reference to the user who owns this shopping list
+    defaultValue: null
+    constraints: []
+  - id: field-shoppingList-title
+    name: title
+    type: string
+    required: true
+    description: Title or name of the shopping list
+    defaultValue: null
+    constraints: []
+  - id: field-shoppingList-createdAt
+    name: createdAt
+    type: date
+    required: true
+    description: Timestamp when the shopping list was created
+    defaultValue: null
+    constraints: []
+  - id: field-shoppingList-updatedAt
+    name: updatedAt
+    type: date
+    required: true
+    description: Timestamp when the shopping list was last updated
+    defaultValue: null
+    constraints: []
+relations:
+  - id: rel-shoppingList-user
+    name: user
+    type: many-to-one
+    targetModel: User
+    description: Owner of the shopping list
+    foreignKey: userId
+  - id: rel-shoppingList-ingredients
+    name: ingredients
+    type: many-to-many
+    targetModel: Ingredient
+    description: Ingredients included in the shopping list
+    foreignKey: shoppingListId
+createdAt: '2025-04-11T21:49:50.729Z'
+updatedAt: '2025-04-11T21:49:50.729Z'

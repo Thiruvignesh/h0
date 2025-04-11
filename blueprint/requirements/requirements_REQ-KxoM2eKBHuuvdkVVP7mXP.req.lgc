@@ -1,0 +1,11 @@
+title: Recipe Management
+description: >-
+  Enable users to add, update, and delete recipes, including ingredients and
+  preparation steps.
+type: functional
+version: '1.0'
+priority: Medium
+status: planned
+id: REQ-KxoM2eKBHuuvdkVVP7mXP
+createdAt: '2025-04-11T21:03:32.207Z'
+updatedAt: '2025-04-11T21:03:32.207Z'
